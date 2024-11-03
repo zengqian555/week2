@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>递归</title>
+</head>
+<body>
+    <script>
+        function isEven(i) {
+         if(i==0)  
+         {return true;}
+         else if(i==1) 
+         {return false;}
+         else {
+            if(i>0) {return isEven(i-2);}
+            else {return isEven(i+2);}
+         }
+        }
+        console.log(isEven(50));
+        console.log(isEven(75));
+        console.log(isEven(-1));
+    </script>
+</body>
+</html>
